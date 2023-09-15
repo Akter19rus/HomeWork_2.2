@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Ravenclaw extends Hogwarts {
     private int mind;
     private int wisdom;
@@ -46,12 +48,39 @@ public class Ravenclaw extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Имя - " + getFullName() + "\n"
-                + "Сила магии - " + getSpellPower() + "\n"
-                + "Дальность трансгрессии - " + getTransgression() + "\n"
+        return super.toString() + "\n"
                 + "Ум - " + mind + "\n"
                 + "Мудрость - " + wisdom + "\n"
                 + "Творчество - " + creation + "\n"
                 + "";
+    }
+
+    public static void RavenclawEquals(Hogwarts[] student) {
+        Scanner scanner = new Scanner(System.in);
+        Ravenclaw search = null;
+        System.out.println("Введите в формате 'имя фамилия' первого Когтевранца: ");
+        String name = scanner.nextLine();
+        for (Hogwarts i : student) {
+            if (i != null && i.getFullName() != null && i.getFullName().toLowerCase().equals(name.toLowerCase())) {
+                search = (Ravenclaw) i;
+                break;
+            }
+        }
+        Ravenclaw search2 = null;
+        System.out.println("Введите в формате 'имя фамилия' второго Когтевранца: ");
+        String name2 = scanner.nextLine();
+        for (Hogwarts i : student) {
+            if (i != null && i.getFullName() != null && i.getFullName().toLowerCase().equals(name2.toLowerCase())) {
+                search2 = (Ravenclaw) i;
+                break;
+            }
+        }
+        int result = search.getMind() + search.getWisdom() + search.getWit() + search.getCreation();
+        int result2 = search2.getMind() + search2.getWisdom() + search2.getWit() + search2.getCreation();
+        if (result > result2) {
+            System.out.println(search.getFullName() + " " + result + " очков, лучший Когтевранец, чем " + search2.getFullName() + " " + result2 + " очков");
+        }else{
+            System.out.println(search2.getFullName() + " " + result2 + " очков лучший Когтевранец, чем " + search.getFullName() + " " + result + " очков");
+        }
     }
 }

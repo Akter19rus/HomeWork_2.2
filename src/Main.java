@@ -19,22 +19,28 @@ public class Main {
         hogwarts[11] = new Ravenclaw("Маркус Белби", 64, 55, 43, 26, 38, 42);
 
         PrintService printService = new PrintService();
-        FacultyService facultyService = new FacultyService();
-        printService.fullStudent(hogwarts);
+        printService.withdrawFullStudent(hogwarts);
         System.out.println(hogwarts);
         printService.delimiter();
-        printService.oneStudent(hogwarts);
+
+        printService.searchStudent(hogwarts);
         printService.delimiter();
 
-        facultyService.equals(hogwarts);
+        Hogwarts.compareStudent(hogwarts);
         printService.delimiter();
-        facultyService.gryffindorEquals(hogwarts);
+
+        Gryffindor.gryffindorEquals(hogwarts);
         printService.delimiter();
-        facultyService.slytherinEquals(hogwarts);
+
+        Slytherin.slytherinEquals(hogwarts);
         printService.delimiter();
-        facultyService.RavenclawEquals(hogwarts);
+
+        Ravenclaw.RavenclawEquals(hogwarts);
         printService.delimiter();
-        facultyService.hufflepuffEquals(hogwarts);
+
+        Hufflepuff.hufflepuffEquals(hogwarts);
+
+
 
 
 

@@ -5,13 +5,13 @@ public class PrintService {
         System.out.println("~~~~~~~~~~~~~~~~~~~~");
     }
 
-    public void fullStudent(Hogwarts[] hogwarts) {
+    public void withdrawFullStudent(Hogwarts[] hogwarts) {
         for (Hogwarts i : hogwarts) {
             System.out.println(i);
         }
     }
 
-    public void oneStudent(Hogwarts[] hogwarts) {
+    public static void searchStudent(Hogwarts[] hogwarts) {
         Scanner scanner = new Scanner(System.in);
         Hogwarts search = null;
         System.out.println("Введите в формате 'имя фамилия' для поиска: ");

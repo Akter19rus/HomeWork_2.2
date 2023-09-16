@@ -73,3 +73,4 @@ public class Slytherin extends Hogwarts {
                 getFullName() + " Худший Слизеринец, чем " + slytherin.getFullName();
     }
 }
+//изменение для github

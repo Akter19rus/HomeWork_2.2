@@ -61,3 +61,4 @@ public class Ravenclaw extends Hogwarts {
                 getFullName() + " Худший Когтевранец, чем " + ravenclaw.getFullName();
     }
 }
+//изменение для github

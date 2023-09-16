@@ -51,3 +51,4 @@ public class Gryffindor extends Hogwarts {
                 getFullName() + " Худший Гриффиндорец, чем " + gryffindor.getFullName();
     }
 }
+//изменение для github

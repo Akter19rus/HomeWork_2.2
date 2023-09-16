@@ -51,3 +51,4 @@ public class Hufflepuff extends Hogwarts {
                 getFullName() + " Худший Пуффиндуец, чем " + hufflepuff.getFullName();
     }
 }
+//изменение для github

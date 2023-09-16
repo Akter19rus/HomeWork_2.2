@@ -31,7 +31,7 @@ public abstract class Hogwarts {
     public String compareStudent(Hogwarts hogwarts) {
         return (spellPower + transgression) > (hogwarts.getSpellPower() + hogwarts.getTransgression()) ?
         getFullName() + " лучше магичит, чем " + hogwarts.getFullName() + "\n" :
-        getFullName() + " хуже магичит в отличии от " + hogwarts.getFullName() + "а" + "\n";
+        getFullName() + " хуже магичит в отличии от " + hogwarts.getFullName() + "а" +  "\n";
     }
 
     public String withdrawStudent(Hogwarts[] hogwarts) {
